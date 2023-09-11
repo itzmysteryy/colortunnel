@@ -128,11 +128,11 @@
         createUnityInstance(canvas, config, (progress) => {
         if(progress>= 0.9 && progress<1)
         {
-            textProgress.innerHTML = '100% - Running, Wait..' +' <img src="' + rootPath + '/gears.gif" class="spinner" width="90" height="90" align = center float :none; />';
+            textProgress.innerHTML = '100% Running, Wait..' +' <img src="' + rootPath + '/gears.gif" class="spinner" width="90" height="90" align = center float :none; />';
             progressBarEmpty.style.display = "none";        }
         else
         {
-            textProgress.innerHTML = 'Loading - ' + Math.floor(progress * 100) + '%' + ' <img src="' + rootPath + '/gears.gif" class="spinner" width="90" height="90" align = center float :none; />';
+            textProgress.innerHTML = 'Loading ' + Math.floor(progress * 100) + '%' + ' <img src="' + rootPath + '/gears.gif" class="spinner" width="90" height="90" align = center float :none; />';
         }
 
         if(showLoadingBar)
